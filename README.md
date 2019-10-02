@@ -15,11 +15,11 @@ DELETE /api/players/{id}|Delete a player by Id|None|A player or 404 if Id doesn'
 **1. Run the unit tests** </br>
 Under the test project folder, type the command *dotnet test <test_project_name>* to run the unit tests
 
-![unit test by CLi](unittest1.png)
-</br>
+![](UnitTest1.PNG)
+</br></br>
 We can also use **Test Explorer** of Visual Studio to run the test: 
 </br>
-![unit test by CLi](unittest2.png)
+![](UnitTest2.PNG)
 
 **2. Run the API project**</br>
 Under the API project folder, type the command *dotnet run* to start the API locally
@@ -29,19 +29,18 @@ Under the API project folder, type the command *dotnet run* to start the API loc
 (1) To test the two GET end points, we can simply type the end point url in a brower:
 
 **Get all players**</br>
-![GetAllPlayers](get.png)
+![](get.PNG)
 
 **Get a player by Id**</br>
-![Get A Players](get2.png)
+![](get2.PNG)
 
 **Get a non existant player**</br>
-![Get non existent Players](get1.png)
+![](get1.PNG)
 
 (2) To test the DELETE end points, we can use **Postman**
 
 **Delete a player by Id:**</br>
-
-![delete a player](delete.png)
-
+![](delete.PNG)
+</br></br>
 **Delete a non existant player**</br>
-![delete a player](delete1.png)
+![](delete1.PNG)
