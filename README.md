@@ -48,5 +48,5 @@ Under the API project folder, type the command *dotnet run* to start the API loc
  ## API Documentation
 An API documentation is generated using the [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore.Swagger/) nuget package. To test it, type http://<hosturi>/swagger/ in a browser:
 </br>
-![](swagger.PNG)
+![](Swagger.PNG)
 
