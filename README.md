@@ -47,10 +47,7 @@ Under the API project folder, type the command *dotnet run* to start the API loc
 
  ## API Documentation generation
 1. An API documentation can be generated using the [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore.Swagger/) nuget package. To test it, type http://<hosturi>/swagger/ in a browser:
-</br>
 ![](Swagger.PNG)
-
-</br>
 
 2. We can use the **[NSwag](https://github.com/RicoSuter/NSwag)** tool to write a **batch script** to generate the json file used by Swagger.
 
