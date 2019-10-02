@@ -7,7 +7,7 @@ API| Description|Request Body|Response Body
 ----------------------------| -----|------|-------|
 GET /api/players|Get all players ordered by Id|None|Array of players
 GET /api/players/{id}|Get a player by Id|None|A player or 404 if Id doesn't exists |
-DELETE /api/players/{id}|Delete a player by Id|None|A player or 404 if Id doesn't exists |
+DELETE /api/players/{id}|Delete a player by Id|None|204 or 404 if Id doesn't exists |
 
 ### How to run and test
 **0. Install Visual Studio 2019 and .Net Core 2.2 SDK**
