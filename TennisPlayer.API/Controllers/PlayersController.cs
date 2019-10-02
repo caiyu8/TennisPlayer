@@ -18,6 +18,10 @@ namespace TennisPlayer.API.Controllers
         }
 
         // GET: api/Players
+        /// <summary>
+        /// Get all tennis players
+        /// </summary>
+        /// <returns>An array of tennis players</returns>
         [HttpGet]
         public ActionResult<IEnumerable<Player>> Get()
         {
@@ -28,6 +32,11 @@ namespace TennisPlayer.API.Controllers
 
 
         // GET: api/Players/5
+        /// <summary>
+        /// Return a specific player
+        /// </summary>
+        /// <param name="id">Player Id</param>
+        /// <returns>A tennis player</returns>
         [HttpGet("{id}")]
         public ActionResult<Player> Get(int id)
         {
@@ -41,6 +50,11 @@ namespace TennisPlayer.API.Controllers
 
 
         // DELETE: api/ApiWithActions/5
+        /// <summary>
+        /// Remove a tennis player
+        /// </summary>
+        /// <param name="id">Player Id</param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TennisPlayer.API</name>
+    </assembly>
+    <members>
+        <member name="M:TennisPlayer.API.Controllers.PlayersController.Get">
+            <summary>
+            Get all tennis players
+            </summary>
+            <returns>An array of tennis players</returns>
+        </member>
+        <member name="M:TennisPlayer.API.Controllers.PlayersController.Get(System.Int32)">
+            <summary>
+            Return a specific player
+            </summary>
+            <param name="id">Player Id</param>
+            <returns>A tennis player</returns>
+        </member>
+        <member name="M:TennisPlayer.API.Controllers.PlayersController.Delete(System.Int32)">
+            <summary>
+            Remove a tennis player
+            </summary>
+            <param name="id">Player Id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
