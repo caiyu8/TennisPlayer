@@ -45,8 +45,25 @@ Under the API project folder, type the command *dotnet run* to start the API loc
 **Delete a non existant player**</br>
 ![](delete1.PNG)
 
- ## API Documentation
-An API documentation is generated using the [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore.Swagger/) nuget package. To test it, type http://<hosturi>/swagger/ in a browser:
+ ## API Documentation generation
+1. An API documentation can be generated using the [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore.Swagger/) nuget package. To test it, type http://<hosturi>/swagger/ in a browser:
 </br>
 ![](Swagger.PNG)
 
+</br>
+
+2. We can use the **[NSwag](https://github.com/RicoSuter/NSwag)** tool to write a **batch script** to generate the json file used by Swagger.
+
+Here is an example:
+ ```
+SET FILE_NAME=TennisPlayerApi
+SET SOURCE_DLL=bin\Debug\netcoreapp2.2\TennisPlayer.API.dll
+SET TARGET_DIR=E:\Tennis\TennisPlayer\TennisPlayer.API\ApiDoc\
+SET TITLE=swaggerTest
+SET DESCRIPTION=SwaggerTest
+SET VERSION=1.0.0
+SET HOST=localhost:5000
+dotnet E:\Tennis\NSwag\NetCore22\dotnet-nswag.dll webapi2swagger /assembly:"%SOURCE_DLL%" /AspNetCore:true /output:%TARGET_DIR%%FILE_NAME%.json /InfoTitle:"%TITLE%" /InfoDescription:"%DESCRIPTION%" /InfoVersion:%VERSION% /ServiceHost:%HOST%
+
+ ```
+The generated json file can then be used by [Swagger UI](https://github.com/swagger-api/swagger-ui) to make a documentation site.
